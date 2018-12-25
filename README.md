@@ -14,7 +14,7 @@ In this new economy, you may find yourself playing with different priorities. Ve
 # How to Install
 1. To play Sky Stranding, first install and enable this mod on a new world. **Static NPCs must be turned on!** You may want slightly different world parameters than usual, given the change in balance.
 2. Before making a new character in this new world, first copy over the contents of the SKYWORLD folder included in this download to the new world directory you've just made.
-3. Make a new character and choose "Sky Stranding" as your starting scenario.
+3. Make a new character and choose "Sky Stranded" as your starting scenario.
   NOTE: Your stats will look terrible, but don't fret -- they're actually 10 points higher than they display, so they still default to the normal 8, not the -2 it says. This discrepancy is a result of the warptouched penalty you'll be dealing with.
 4. Once you're all done and start your game, you should wake up on a floating island. From here, your new life begins!
 
