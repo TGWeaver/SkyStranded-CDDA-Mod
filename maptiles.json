@@ -1,0 +1,158 @@
+[{
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "skyvoid" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV"
+      ],
+      "terrain": {
+        "V": "t_open_air"
+      },
+      "furniture": {
+      },
+      "place_monsters": [
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "skyisland" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV"
+      ],
+      "terrain": {
+        "V": "t_dirt"
+      },
+      "furniture": {
+      },
+      "place_monsters": [
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "skyislandx" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVXVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV",
+        "VVVVVVVVVVVVVVVVVVVVVVVV"
+      ],
+      "terrain": {
+        "V": "t_dirt",
+        "X": "t_TRS_stabilized_portal_sky"
+      },
+      "furniture": {
+      },
+      "place_monsters": [
+      ],
+      "place_npcs": [
+        { "class": "warp_administrator", "x": 3, "y": 3 }
+      ]
+    }
+  },
+  {
+    "id": "skyvoid",
+    "type": "overmap_terrain",
+    "name": "sky void",
+    "sym": 67,
+    "color": "light_blue",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "id": "skyisland",
+    "type": "overmap_terrain",
+    "name": "floating island",
+    "sym": 67,
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "id": "skyislandx",
+    "type": "overmap_terrain",
+    "name": "floating island",
+    "sym": 67,
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  }
+  ]

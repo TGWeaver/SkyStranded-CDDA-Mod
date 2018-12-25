@@ -1,0 +1,17 @@
+[
+    {
+        "type" : "item_action",
+        "id" : "IUSE_WARPOUT",
+        "name" : "Leave your dimensional sanctuary"
+    },
+    {
+        "type" : "item_action",
+        "id" : "IUSE_WARPIN",
+        "name" : "Return to your dimensional sanctuary"
+    },
+    {
+        "type" : "item_action",
+        "id" : "IUSE_WARPCONFIG",
+        "name" : "Link with recall portal"
+    }
+]

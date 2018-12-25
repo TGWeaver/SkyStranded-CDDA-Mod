@@ -1,0 +1,22 @@
+[
+{
+    "id": "warper",
+    "type": "TOOL_ARMOR",
+    "symbol": "g",
+    "color": "red",
+    "looks_like": "teleporter",
+    "name": "recall stone",
+    "description": "A strange, rune-carved talisman on a string. Your only link to the outside world, by which you can teleport in and out at the Recall Portal in your sanctuary. Remember to bind it to that Portal before leaving, lest you find yourself stranded out in another dimension and rotting away.",
+    "price": 1000,
+    "material": [ "aluminum", "plastic" ],
+    "weight": 450,
+    "volume": 1,
+    "max_charges": 48,
+    "initial_charges": 48,
+    "flags": [ "NO_UNLOAD" ],
+    "use_action": [ "IUSE_WARPOUT", "IUSE_WARPIN", "IUSE_WARPCONFIG" ],
+    "artifact_data": {
+      "charge_type": "ARTC_TIME"
+    }
+  }
+]

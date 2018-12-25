@@ -1,0 +1,37 @@
+[
+{
+    "type": "start_location",
+    "ident": "start_island",
+    "name": "Floating Island",
+    "target": "skyislandx",
+    "flags": [ "ALLOW_OUTSIDE" ]
+  },
+{
+    "type": "scenario",
+    "name": "Sky Stranded",
+    "description": "When you woke up, the world had rotted away. All that was left was this fractured chunk of earth and a glimmering window into some transient dimension you barely recognized.",
+    "ident": "scenario_strander",
+    "points": 0,
+    "start_name": "Fractured Island",
+    "allowed_locs": [ "start_island" ],
+    "professions": [
+      "strander"
+    ],
+    "traits": [
+    ],
+    "forced_traits": [ "warpsick" ],
+    "flags": [ "LONE_START", "CHALLENGE" ]
+  },
+  {
+    "type": "profession",
+    "ident": "strander",
+    "name": "Strander",
+    "description": "Everything you knew is gone. All that remains is a strange device in your pocket -- and it seems to call out to some other place.",
+    "points": -2,
+    "items": {
+      "both": {
+        "items": [ "warper", "subsuit_xl" ]
+    }
+  }
+  }
+]

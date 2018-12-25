@@ -1,0 +1,38 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_WARP_ADMIN",
+    "dynamic_line": "What can I do for you?",
+    "responses": [
+      { 
+      "text": "I need my shots.", 
+      "topic": "TALK_DONE", 
+      "effect": { "u_add_effect": "warp_cure", "duration" : 99999999 } 
+      },
+      { 
+      "text": "Nevermind.", 
+      "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "warp_administrator",
+    "comment": "A temporal projection of your old administrator.",
+    "name_unique": "Waldo",
+    "name_suffix": "Warp Administrator",
+    "gender": "male",
+    "class": "NC_WARPADMIN",
+    "attitude": 0,
+    "chat": "TALK_WARP_ADMIN",
+    "mission" : 7,
+    "faction" : "free_merchants"
+  },
+  {
+   "type" : "npc_class",
+   "id" : "NC_WARPADMIN",
+   "name" : "Warp Admin",
+   "job_description" : "Don't you remember me?",
+   "traits": [  ],
+   "common" : false
+   }
+]

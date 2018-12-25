@@ -1,0 +1,13 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_TRS_stabilized_portal_sky",
+    "name": "Recall Portal",
+    "description": "This specialized gate will serve as the entrance and exit to your sanctuary, but must be linked your Recall Stone first.",
+    "symbol": "0",
+    "color": "blue",
+    "move_cost": 3,
+    "flags": [ "TRANSPARENT", "NOITEM", "INDOORS" ],
+    "bash": { "sound": "thump", "ter_set": "t_null", "str_min": 50, "str_max": 100, "str_min_supported": 100, "bash_below": true }
+  }
+]

@@ -1,0 +1,31 @@
+[
+{
+        "type": "effect_type",
+        "id": "warp_cure",
+        "name": ["Warp Inoculation"],
+        "desc": ["You're temporarily inoculated against the negative effects of the warp. A typical dose lasts 48 hours. The Administrator back at home base can refresh your dose whenever needed."],
+        "apply_message": "You can feel the pull of another place slowly release its grip on you.",
+        "rating": "good",
+        "base_mods": {
+            "str_mod": [10],
+            "dex_mod": [10],
+            "int_mod": [10],
+            "per_mod": [10]
+        },
+        "max_duration": 28800,
+        "decay_messages": [["Your warp inoculation wears off. You can feel the universe pulling you in every direction at once, and every part of you is numbed with a sensation of static crackling. You need to get home -- NOW!", "bad"]]
+    },
+    {
+        "type" : "mutation",
+        "id" : "warpsick",
+        "name" : "Warptouched",
+        "points" : 0,
+        "description" : "Some part of you has been forever changed from your brush with another dimension. You'll be safe in your home bubble dimension -- mostly -- but spend too long away without an inoculation and your entire body will begin to disintegrate.",
+        "passive_mods" : {
+            "str_mod" : -10,
+            "dex_mod" : -10,
+            "int_mod" : -10,
+            "per_mod" : -10
+        }
+    }
+]

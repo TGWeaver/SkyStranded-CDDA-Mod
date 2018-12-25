@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "skystranding",
+    "name": "Sky Stranding",
+    "authors": [ "TGW" ],
+    "description": "Make your base on an isolated island in the sky, and experience being a transimdensional hermit.",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  }
+]

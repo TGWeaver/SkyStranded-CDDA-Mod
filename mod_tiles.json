@@ -1,0 +1,20 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "tiles/tiles.png",
+        "tiles":
+        [
+          {
+            "id": "t_TRS_stabilized_portal_sky",
+            "fg": 1,
+            "bg": 0,
+            "rotates": false
+          }
+        ]
+      }
+    ]
+  }
+]
