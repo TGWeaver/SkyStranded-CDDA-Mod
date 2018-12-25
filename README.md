@@ -1,5 +1,5 @@
-# Sky Stranding
-Sky Stranding is a CDDA mod that introduces a new way to play. From your base in the sky, teleport to and from the ever-changing* world. Set up a permanent base on a desolate floating island, and make increasingly deep forays into the transient wilderness. Bring back anything you can carry, but leave the rest -- the world resets every time you leave it*, and anything you can't take with you will be gone forever. How much can you get done before the world rots away at you and forces you to escape to the safety of your sanctuary? How well can you manage your limited opportunities? How much can you pack while still leaving room for all the loot you'll need to carry home?
+# Sky Stranded
+Sky Stranded is a CDDA mod that introduces a new way to play. From your base in the sky, teleport to and from the ever-changing* world. Set up a permanent base on a desolate floating island, and make increasingly deep forays into the transient wilderness. Bring back anything you can carry, but leave the rest -- the world resets every time you leave it*, and anything you can't take with you will be gone forever. How much can you get done before the world rots away at you and forces you to escape to the safety of your sanctuary? How well can you manage your limited opportunities? How much can you pack while still leaving room for all the loot you'll need to carry home?
 Please note that due to limitations, there is one big catch in this mod.*
 
 ## Overview
@@ -12,7 +12,7 @@ Beware! The shifting reality you've been thrust into has left you *warptouched*.
 In this new economy, you may find yourself playing with different priorities. Vehicles seem less important because there's no way to take them with you, but a foldable vehicle you can take with you could change everything. Storage is at a premium, but what can you leave at home to ensure you've got space for the loot you'll be picking up, and how can you still manage your encumbrance? Do you warp home at the first sign of trouble, or do you stick it out, risking danger until you've cleared the location you've been searching for for so long? What if your backpack rips in the middle of a harrowing fight? Do you risk your life to find a way to carry home your spilled items, or do you cut your losses and leave behind what could be several trip's worth of valuable equipment? And how can you find, infiltrate, and clear challenging locations like labs
 
 # How to Install
-1. To play Sky Stranding, first install and enable this mod on a new world. **Static NPCs must be turned on!** You may want slightly different world parameters than usual, given the change in balance.
+1. To play Sky Stranded, first install and enable this mod on a new world. **Static NPCs must be turned on!** You may want slightly different world parameters than usual, given the change in balance.
 2. Before making a new character in this new world, first copy over the contents of the SKYWORLD folder included in this download to the new world directory you've just made.
 3. Make a new character and choose "Sky Stranded" as your starting scenario.
   NOTE: Your stats will look terrible, but don't fret -- they're actually 10 points higher than they display, so they still default to the normal 8, not the -2 it says. This discrepancy is a result of the warptouched penalty you'll be dealing with.
