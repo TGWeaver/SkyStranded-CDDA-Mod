@@ -51,7 +51,7 @@ You don't have to do this every single time you come home, of course. Just whene
 
 # Dimensional Essence (NEW)
 Dimensional essence can drop from any zombie, with special zombies increasingly more likely to drop them as enemy difficulty rises (hulks are the best shot). Essence is weightless and easy to carry, and can be eaten in an emergency, for +2 hours of warp immunity.
-The play can also craft a "dimensional fulton" device which can be used to hyper-condense certain common resources down to an easily carried size, which can then be 'unpacked' back at your home base. The device itself is reusable, but must be 'refueled' with 1 unit of dimensional essence each time it's used.
+The player can also craft a "dimensional fulton" device which can be used to hyper-condense certain common resources down to an easily carried size, which can then be 'unpacked' back at your home base. The device itself is reusable, but must be 'refueled' with 1 unit of dimensional essence each time it's used.
 
 The purpose of this change/balance is to make it easier to haul home normally immense/heavy items in large numbers, most especially things like logs and 2x4s, which are vital to building any structures on the island.
 More resources maybe be added to the list as fulton-able by suggestion.
