@@ -2,6 +2,9 @@
 Sky Stranded is a CDDA mod that introduces a new way to play. From your base in the sky, teleport to and from the ever-changing* world. Set up a permanent base on a desolate floating island, and make increasingly deep forays into the transient wilderness. Bring back anything you can carry, but leave the rest -- the world resets every time you leave it*, and anything you can't take with you will be gone forever. How much can you get done before the world rots away at you and forces you to escape to the safety of your sanctuary? How well can you manage your limited opportunities? How much can you pack while still leaving room for all the loot you'll need to carry home?
 Please note that due to limitations, there is one big catch in this mod.*
 
+## Update 1:
+Added dimensional essence and dimensional fultons.
+
 ## Overview
 Your sanctuary, a floating bubble of space in an interdimensional void, will serve as your home base. The only way in or out is a Recall Portal you can operate with the use of your provided Recall Stone. Here in the sanctuary, you can build structures, set up crafting areas, stash your loot, cultivate farms, and so on. You should be completely safe here, but it's absolutely desolate to start. Your first priority will likely be to set up a pile for your loot and a comfortable sleeping area sheltered from the elements. Beyond that, it's up to you!
 
@@ -45,6 +48,13 @@ The mod, as you might expect, can't go into your hard drive and start deleting p
 If you're ever worried about this going wrong, feel free to keep backups!
 
 You don't have to do this every single time you come home, of course. Just whenever you need to reset the world. What's important is that you **only warp to totally unexplored areas** -- so for example, no dropping off near a mansion you've already visited and then hiking to it, or warping in a few tiles off from a city street you've been to, knowing you'll still be in a city.
+
+# Dimensional Essence (NEW)
+Dimensional essence can drop from any zombie, with special zombies increasingly more likely to drop them as enemy difficulty rises (hulks are the best shot). Essence is weightless and easy to carry, and can be eaten in an emergency, for +2 hours of warp immunity.
+The play can also craft a "dimensional fulton" device which can be used to hyper-condense certain common resources down to an easily carried size, which can then be 'unpacked' back at your home base. The device itself is reusable, but must be 'refueled' with 1 unit of dimensional essence each time it's used.
+
+The purpose of this change/balance is to make it easier to haul home normally immense/heavy items in large numbers, most especially things like logs and 2x4s, which are vital to building any structures on the island.
+More resources maybe be added to the list as fulton-able by suggestion.
 
 # Tips
 * Until you build a comfy place to sleep in your sanctuary, you may have to use beds out in the world! This can be a bit more dangerous.
