@@ -1,0 +1,567 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "id": "dimessence",
+    "symbol": "=",
+    "color": "light_gray",
+    "name": "dimensional matter",
+    "name_plural": "dimensional matter",
+    "description": "A tiny quantity of almost featureless, barely tangible purple motes of dust.",
+    "price": 0,
+    "flags": [ "NO_SALVAGE" ],
+    "weight": 1,
+    "volume": 0,
+    "charges": 1,
+    "material": "powder",
+    "stack_size": 200,
+    "category": "spare_parts",
+    "ammo_type" : "components",
+    "to_hit": -1,
+    "use_action" : {
+        "type" : "consume_drug",
+        "activation_message" : "You absorb a mote of dimensional essence, staving off warpsickness for a couple hours more.",
+        "effects" : [
+            {
+                "id": "warp_cure",
+                "duration": 1200
+            }
+        ]
+    }
+  },
+  {
+        "type" : "item_group",
+        "//": "adds a small chance that any standard zombie might drop dimensional matter",
+        "id": "default_zombie_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 2, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_swimmer_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 3, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_scientist_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 15, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_grenadier",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 18, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_grenadier_elite",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 20, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_armored_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 30, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_hulk_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 35, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_hazmat_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 5, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_bio_op_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 15, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_fireman_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 3, "count": 1 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "id": "mon_zombie_survivor_elite_death_drops",
+        "subtype": "collection",
+        "entries":
+        [
+            { "item": "dimessence", "prob": 10, "count": 1 }
+        ]
+    },
+    {
+	"copy-from": "e_scrap",
+	"id": "fultonparts",
+	"name": "dimensional fulton (unpowered)",
+	"description": "A surprisingly simplistic miniature device made to tunnel through spacetime, in much the same way a recall stone does. It currently lacks the dimensional matter to enter the slipstream.",
+	"type": "GENERIC",
+    "looks_like": "e_scrap",
+	"weight": 4,
+	"volume": 1
+	},
+    {
+	"copy-from": "fultonparts",
+	"id": "fultonparts_filled",
+	"name": "dimensional fulton",
+	"description": "A surprisingly simplistic miniature device made to tunnel through spacetime, in much the same way a recall stone does. Now fully charged, it's ready to be bound to a suitable payload for transport.",
+	"type": "GENERIC",
+    "looks_like": "e_scrap",
+	"weight": 4,
+	"volume": 1
+	},
+    {
+    "result": "fultonparts",
+    "type": "recipe",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_COMPONENTS",
+    "skill_used": "electronics",
+    "difficulty": 3,
+    "skills_required": [ "fabrication", 4 ],
+    "time": 400,
+    "reversible": false,
+    "autolearn": true,
+    "using": [ [ "soldering_standard", 5 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+       [["processor"       ,  1]]
+      ,[["RAM"             ,  1]]
+      ,[["cable"           , 10]]
+      ,[["e_scrap"         ,  2]]
+      ,[["circuit"         ,  2]]
+      ,[["power_supply"    ,  1]]
+      ,[["amplifier"       ,  2]]
+      ,[["plastic_chunk"   , 4]]
+      ,[["scrap"           , 2]]
+      ,[["solar_cell"      ,  1]]
+    ]
+  },
+    {
+    "result": "fultonparts_filled",
+    "type": "recipe",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_COMPONENTS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 10,
+    "reversible": false,
+    "autolearn": true,
+    "components": [
+       [["fultonparts"       ,  1]]
+      ,[["dimessence"             ,  1]]
+    ]
+  },
+  {
+    "id": "fulton_rag",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: rags",
+    "name_plural": "fulton shipments: rags",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains rags.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_rag",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "rag", 100 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_rag",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "rag", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_plastic",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: plastic",
+    "name_plural": "fulton shipments: plastic",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains plastic.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_plastic",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "plastic_chunk", 100 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_plastic",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "plastic_chunk", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_leather",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: leather",
+    "name_plural": "fulton shipments: leather",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains leather.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_leather",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "leather", 100 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_leather",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "leather", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_wool",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: wool",
+    "name_plural": "fulton shipments: wool",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains wool.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_wool",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "felt_patch", 100 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_wool",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "felt_patch", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_kevlar",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: kevlar",
+    "name_plural": "fulton shipments: kevlar",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains kevlar.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_kevlar",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "kevlar_plate", 100 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_kevlar",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "kevlar_plate", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_splintered_wood",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: splintered wood",
+    "name_plural": "fulton shipments: splintered wood",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains splintered wood.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_splintered_wood",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "splinter", 100 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_splintered_wood",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "splinter", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_2x4",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: two by fours",
+    "name_plural": "fulton shipments: two by fours",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains two by fours.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_2x4",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "2x4", 100 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_2x4",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "2x4", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_logs",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: logs",
+    "name_plural": "fulton shipments: logs",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains logs.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_logs",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [ [[ "fultonparts_filled", 1 ]], [ [ "log", 25 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_logs",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "log", 25 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_frame",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: frames",
+    "name_plural": "fulton shipments: frames",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains metal frames.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_frame",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "frame", 10 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_frame",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "frame", 10 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_steel_plate",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: steel_plate",
+    "name_plural": "fulton shipments: steel_plate",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains steel plates.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_steel_plate",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "steel_plate", 10 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_steel_plate",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "steel_plate", 10 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "fulton_rock",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "fulton shipment: rocks",
+    "name_plural": "fulton shipments: rock",
+    "description": "A blinking wormhole receiver. The contents of an interdimensional package have been shipped up and are ready to be delivered, saving you the hassle of hauling around heavy cargo. Activate to receive the transdimensional package instantaneously. This one contains rocks.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": ",",
+    "color": "white",
+    "looks_like":  "bundle_rag",
+    "use_action": "DISASSEMBLE"
+  },
+  {
+    "result": "fulton_rock",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "components": [[[ "fultonparts_filled", 1 ]],  [ [ "rock", 100 ] ]],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "fulton_rock",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "components": [ [ [ "fultonparts", 1 ] ], [ [ "rock", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  }
+ ]
